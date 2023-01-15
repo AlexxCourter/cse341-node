@@ -1,0 +1,11 @@
+###local
+GET http://localhost:3000/contacts 
+### should return entry for nicole
+GET http://localhost:3000/contacts/63c1cca7c48bc4d48cf99709
+### should return entry for olivia
+GET http://localhost:3000/contacts/63c1ccfdc48bc4d48cf9970a
+### should return entry for alex
+GET http://localhost:3000/contacts/63c1cd74c48bc4d48cf9970b
+###
+
+###Render
