@@ -49,15 +49,15 @@ POST https://alex-courter-cse341.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Imposter",
-    "lastName":"...",
-    "email":"badActor@spoof.com",
-    "favoriteColor":"Evil",
-    "birthday":"infinity"
+    "firstName":"Mike",
+    "lastName":"Courter",
+    "email":"1800@notARealNumber.com",
+    "favoriteColor":"green",
+    "birthday":"03/25/1970"
 }
 
 ### PUT a request to update a contact
-PUT https://alex-courter-cse341.onrender.com/contacts/63cc9c6ae4367f649b788b0c HTTP/1.1
+PUT https://alex-courter-cse341.onrender.com/contacts/63ccd11a9e1336f394ce49c5 HTTP/1.1
 content-type: application/json
 
 {
