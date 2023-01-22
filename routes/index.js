@@ -1,5 +1,5 @@
 const routes = require('express').Router();
 
-routes.use('/contacts', require('./contacts'))
+routes.use('/contacts', require('./contacts'));
 
 module.exports = routes;

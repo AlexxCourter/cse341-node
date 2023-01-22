@@ -7,5 +7,66 @@ GET http://localhost:3000/contacts/63c1ccfdc48bc4d48cf9970a
 ### should return entry for alex
 GET http://localhost:3000/contacts/63c1cd74c48bc4d48cf9970b
 ###
+### POST a new contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Mike",
+    "lastName":"Courter",
+    "email":"1800@notARealNumber.com",
+    "favoriteColor":"green",
+    "birthday":"03/25/1970"
+}
+
+### PUT a contact, updating it. This test will change the favoriteColor 
+PUT http://localhost:3000/contacts/0 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Mike",
+    "lastName":"Courter",
+    "email":"1800@notARealNumber.com",
+    "favoriteColor":"blue",
+    "birthday":"03/25/1970"
+}
+
+### DELETE a contact using the provided ID in the request params
+DELETE http://localhost:3000/contacts/63cca9eb4c7155b08d2c41ab HTTP/1.1
 
 ###Render
+### Get all contacts
+GET https://alex-courter-cse341.onrender.com/contacts
+### get a single contact by ID (3 calls available with different IDs)
+GET https://alex-courter-cse341.onrender.com/contacts/63c1cca7c48bc4d48cf99709
+###
+GET https://alex-courter-cse341.onrender.com/contacts/63c1ccfdc48bc4d48cf9970a
+###
+GET https://alex-courter-cse341.onrender.com/contacts/63c1cd74c48bc4d48cf9970b
+
+### POST a new contact using render deploy
+POST https://alex-courter-cse341.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Imposter",
+    "lastName":"...",
+    "email":"badActor@spoof.com",
+    "favoriteColor":"Evil",
+    "birthday":"infinity"
+}
+
+### PUT a request to update a contact
+PUT https://alex-courter-cse341.onrender.com/contacts/63cc9c6ae4367f649b788b0c HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Mike",
+    "lastName":"Courter",
+    "email":"1800@notARealNumber.com",
+    "favoriteColor":"blue",
+    "birthday":"03/25/1970"
+}
+
+### DELETE a contact using the provided ID in the request params
+DELETE https://alex-courter-cse341.onrender.com/contacts/63cca9eb4c7155b08d2c41ab HTTP/1.1
