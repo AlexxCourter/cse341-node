@@ -9,8 +9,8 @@ const swaggerDocument = require('./docs/swagger.json');
 
 
 app
-  .use(bodyParser.json())
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+  .use(bodyParser.json())
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader(
