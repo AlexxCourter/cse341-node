@@ -15,8 +15,8 @@ app
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader(
       'Access-Control-Allow-Headers',
-      'Origin, X-Requested-With');
-    // res.setHeader('Content-Type', 'application/json');
+      'Origin, X-Requested-With, Content-Type');
+    res.setHeader('Content-Type', 'application/json');
     //allow domains with access to execute all HTTP CRUD methods.
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     next();
