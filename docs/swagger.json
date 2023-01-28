@@ -8,7 +8,6 @@
   "host": "alex-courter-cse341.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
