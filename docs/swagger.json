@@ -13,7 +13,7 @@
   "paths": {
     "/contacts/": {
       "get": {
-        "description": "",
+        "description": "Returns all contacts in the database",
         "produces": [
           "application/json"
         ],
@@ -25,7 +25,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Creates a new contact and adds it to the database using data entered in the request body.",
         "parameters": [
           {
             "name": "body",
@@ -83,7 +83,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update a contact using its ID and the new data for the contact included in the request body.",
         "parameters": [
           {
             "name": "id",
@@ -126,7 +126,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Removes a contact based on ID from the database permanently.",
         "parameters": [
           {
             "name": "id",
