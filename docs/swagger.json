@@ -7,16 +7,12 @@
   },
   "host": "alex-courter-cse341.onrender.com",
   "basePath": "/",
-  "schemes": [
-    "https"
-  ],
+  "schemes": ["https"],
   "paths": {
     "/contacts/": {
       "get": {
         "description": "Returns all contacts in the database",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [],
         "responses": {
           "200": {
@@ -65,9 +61,7 @@
     "/contacts/{id}": {
       "get": {
         "description": "Returns a specific contact related to provided ID. Example ID: 63c1cd74c48bc4d48cf9970b",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
